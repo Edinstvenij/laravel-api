@@ -9,6 +9,11 @@ class DeskList extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'desk_id'
+    ];
+
     public function desk()
     {
         return $this->belongsTo(Desk::class);

@@ -17,7 +17,7 @@ class DeskFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->sentence(rand(2,6))
         ];
     }
 }

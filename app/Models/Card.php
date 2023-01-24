@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Card extends Model
 {
+    protected $fillable = [
+        'name',
+        'desk_list_id'
+    ];
+
     use HasFactory;
 }
